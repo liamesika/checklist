@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קורס מקצועי לבניית עסק עצמאי באישורי הגעה והושבה | מתחתנים בקלות</title>
+    <meta name="description" content="למדו לנהל אישורי הגעה, לתכנן הושבה ולהפוך את זה לעסק רווחי ומקצועי. קורס מעשי עם המערכת 'מתחתנים בקלות'.">
+    <meta property="og:title" content="קורס מקצועי לבניית עסק עצמאי באישורי הגעה והושבה">
+    <meta property="og:description" content="למדו לנהל אישורי הגעה, לתכנן הושבה ולהפוך את זה לעסק רווחי ומקצועי">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/og-image.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&family=Heebo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="course-page.css">
+</head>
+<body>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="mobile-sticky-cta" id="mobileStickyCta">
+        <button class="cta-btn-mobile" onclick="scrollToEnroll()">התחל את הקורס עכשיו</button>
+    </div>
+
+    <!-- Header -->
+    <header class="header-minimal">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="Checklists Logo">
+                </div>
+                <a href="#pricing" class="header-cta">רכישת הקורס</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-premium">
+        <div class="hero-bg-pattern"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-icon">✨</span>
+                        <span>קורס מעשי לבניית עסק אמיתי</span>
+                    </div>
+                    <h1 class="hero-title">
+                        הפכו למומחים מקצועיים<br>
+                        <span class="gradient-text">באישורי הגעה והושבה</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        למדו בדיוק איך לנהל אישורי הגעה, לתכנן הושבה, לעבוד עם המערכת "מתחתנים בקלות",<br>
+                        לדבר עם זוגות — ולהפוך את זה לעסק עצמאי רווחי ומקצועי.
+                    </p>
+                    <div class="hero-cta-group">
+                        <button class="cta-btn primary large" onclick="scrollToEnroll()">
+                            <span>התחל את הקורס עכשיו</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M13 10L7 16M13 10L7 4M13 10H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="cta-btn secondary large" onclick="openVideoModal()">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M6.3 4.1c-.4-.2-.8-.2-1.2 0C4.7 4.3 4.5 4.7 4.5 5v10c0 .3.2.7.6.9.2.1.4.1.6.1.2 0 .4-.1.6-.2l8-5c.3-.2.5-.5.5-.8s-.2-.6-.5-.8l-8-5z"/>
+                            </svg>
+                            <span>צפה בסקירת הקורס</span>
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="1000">100+</div>
+                            <div class="stat-label">זוגות מרוצים</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="12">50+</div>
+                            <div class="stat-label">מודולים מעשיים</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">100%</div>
+                            <div class="stat-label">אחוז הצלחה</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card card-1">
+                        <div class="card-header">
+                            <span class="card-icon">✅</span>
+                            <span>לפני</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="chaos-indicator">😰 כאוס וחוסר ודאות</div>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="card-header">
+                            <span class="card-icon">🎯</span>
+                            <span>אחרי</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="success-indicator">✨ סדר מושלם ושליטה</div>
+                        </div>
+                    </div>
+                    <div class="hero-mockup">
+                        <div class="mockup-browser">
+                            <div class="browser-bar">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="browser-content">
+                                <div class="dashboard-preview">
+                                    <div class="preview-header">
+                                        <div class="preview-stat">
+                                            <div class="stat-value">347</div>
+                                            <div class="stat-name">אורחים</div>
+                                        </div>
+                                        <div class="preview-stat">
+                                            <div class="stat-value">92%</div>
+                                            <div class="stat-name">אישרו</div>
+                                        </div>
+                                        <div class="preview-stat">
+                                            <div class="stat-value">28</div>
+                                            <div class="stat-name">שולחנות</div>
+                                        </div>
+                                    </div>
+                                    <div class="preview-list">
+                                        <div class="list-item"></div>
+                                        <div class="list-item"></div>
+                                        <div class="list-item"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">רוב האירועים מנוהלים בכאוס.<br>תלמדו איך לתקן את זה.</h2>
+                <p class="section-subtitle">האתגרים שזוגות מתמודדים איתם — ושאתם תדעו לפתור</p>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card" data-delay="0">
+                    <div class="problem-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 16v12M24 32v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>חוסר ודאות במספר האורחים</h3>
+                    <p>זוגות לא יודעים כמה אורחים באמת יגיעו, מה שגורם ללחץ ולעלויות מיותרות.</p>
+                </div>
+                <div class="problem-card" data-delay="100">
+                    <div class="problem-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 20h16M16 28h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>הושבה מלחיצה ומבולגנת</h3>
+                    <p>תכנון ההושבה הופך לסיוט כשאין מערכת ברורה וכלים מקצועיים.</p>
+                </div>
+                <div class="problem-card" data-delay="200">
+                    <div class="problem-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="18" r="6" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 38c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>ספקים שלא באמת מבינים</h3>
+                    <p>הרבה ספקים מנחים זוגות בצורה שגויה, בלי הבנה עמוקה של התהליך.</p>
+                </div>
+                <div class="problem-card" data-delay="300">
+                    <div class="problem-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M8 24h12M28 24h12M20 12v24M28 12v24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>אין מבנה ואין מערכת</h3>
+                    <p>עבודה ללא כלים מקצועיים גורמת לטעויות, בזבוז זמן ושירות לא איכותי.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container-full">
+            <div class="section-header center">
+                <h2 class="section-title">קורס מעשי צעד-אחר-צעד<br>עם המערכת האמיתית</h2>
+                <p class="section-subtitle">מה תלמדו בקורס</p>
+            </div>
+            <div class="solution-scroll">
+                <div class="solution-cards">
+                    <div class="solution-card">
+                        <div class="solution-icon">📝</div>
+                        <h3>אישורי הגעה מקצועיים</h3>
+                        <p>איך לאסוף אישורי הגעה בצורה חכמה ויעילה</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">👥</div>
+                        <h3>ניהול רשימת אורחים</h3>
+                        <p>ארגון, עדכון ומעקב אחרי כל אורח בקלות</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">🪑</div>
+                        <h3>תכנון הושבה חכם</h3>
+                        <p>יצירת מפת הושבה מושלמת תוך דקות</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">👨‍👩‍👧‍👦</div>
+                        <h3>עבודה עם משפחות</h3>
+                        <p>איך לנהל קשרים עם משפחות וציפיות</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">🤝</div>
+                        <h3>ניהול צוות</h3>
+                        <p>גיוס והכשרת עוזרים לאירועים גדולים</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">💰</div>
+                        <h3>מכירת השירות</h3>
+                        <p>איך לתמחר, לשווק ולסגור עסקאות</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">⏰</div>
+                        <h3>ניהול אירוע בזמן אמת</h3>
+                        <p>מה לעשות ביום האירוע עצמו</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Showcase -->
+    <section class="system-showcase" id="system">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">שליטה מלאה במערכת<br>"מתחתנים בקלות"</h2>
+                <p class="section-subtitle">למדו לעבוד כמו מקצוען עם המערכת המתקדמת בשוק</p>
+            </div>
+            <div class="system-workflow">
+                <div class="workflow-step" data-step="1">
+                    <div class="step-visual" onclick="openSystemModal(1)">
+                        <div class="step-screenshot">
+                            <div class="screenshot-placeholder">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <path d="M20 12h24M12 24h40M12 36h40M12 48h40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="hover-overlay">
+                                <span>לחץ לצפייה</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">01</div>
+                        <h3>העלאת רשימת אורחים</h3>
+                        <p>העלאת קובץ אקסל, הוספת אורחים ידנית, וארגון המידע</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow">
+                    <svg width="40" height="40" viewBox="0 0 40 40">
+                        <path d="M10 20h20M20 10l10 10-10 10" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                <div class="workflow-step" data-step="2">
+                    <div class="step-visual" onclick="openSystemModal(2)">
+                        <div class="step-screenshot">
+                            <div class="screenshot-placeholder">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M24 32l6 6 12-12" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="hover-overlay">
+                                <span>לחץ לצפייה</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">02</div>
+                        <h3>איתור כפילויות</h3>
+                        <p>המערכת מזהה אורחים כפולים ועוזרת לנקות את הרשימה</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow">
+                    <svg width="40" height="40" viewBox="0 0 40 40">
+                        <path d="M10 20h20M20 10l10 10-10 10" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                <div class="workflow-step" data-step="3">
+                    <div class="step-visual" onclick="openSystemModal(3)">
+                        <div class="step-screenshot">
+                            <div class="screenshot-placeholder">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <rect x="16" y="16" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M28 32l4 4 8-8" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="hover-overlay">
+                                <span>לחץ לצפייה</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">03</div>
+                        <h3>שליחת הודעות</h3>
+                        <p>שליחת SMS ו-WhatsApp לאורחים באופן אוטומטי</p>
+                    </div>
+                </div>
+                <div class="workflow-step" data-step="4">
+                    <div class="step-visual" onclick="openSystemModal(4)">
+                        <div class="step-screenshot">
+                            <div class="screenshot-placeholder">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <rect x="12" y="12" width="40" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="24" cy="24" r="4" fill="currentColor"/>
+                                    <circle cx="40" cy="24" r="4" fill="currentColor"/>
+                                    <circle cx="24" cy="40" r="4" fill="currentColor"/>
+                                    <circle cx="40" cy="40" r="4" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="hover-overlay">
+                                <span>לחץ לצפייה</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">04</div>
+                        <h3>עדכון סטטוסים</h3>
+                        <p>מעקב אחרי מי אישר, מי סירב, ומי עוד לא ענה</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow">
+                    <svg width="40" height="40" viewBox="0 0 40 40">
+                        <path d="M10 20h20M20 10l10 10-10 10" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                <div class="workflow-step" data-step="5">
+                    <div class="step-visual" onclick="openSystemModal(5)">
+                        <div class="step-screenshot">
+                            <div class="screenshot-placeholder">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <path d="M20 20h8v8h-8zM36 20h8v8h-8zM20 36h8v8h-8zM36 36h8v8h-8z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="hover-overlay">
+                                <span>לחץ לצפייה</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">05</div>
+                        <h3>ניתוח ונתונים</h3>
+                        <p>דוחות מפורטים, גרפים וסטטיסטיקות</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow">
+                    <svg width="40" height="40" viewBox="0 0 40 40">
+                        <path d="M10 20h20M20 10l10 10-10 10" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                <div class="workflow-step" data-step="6">
+                    <div class="step-visual" onclick="openSystemModal(6)">
+                        <div class="step-screenshot">
+                            <div class="screenshot-placeholder">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <circle cx="32" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="20" cy="40" r="6" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="44" cy="40" r="6" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="hover-overlay">
+                                <span>לחץ לצפייה</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">06</div>
+                        <h3>יצירת הושבה</h3>
+                        <p>תכנון מפת הושבה ויזואלית וקלה לשימוש</p>
+                    </div>
+                </div>
+                <div class="workflow-step" data-step="7">
+                    <div class="step-visual" onclick="openSystemModal(7)">
+                        <div class="step-screenshot">
+                            <div class="screenshot-placeholder">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <rect x="16" y="16" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M24 28h16M24 36h12" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="hover-overlay">
+                                <span>לחץ לצפייה</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">07</div>
+                        <h3>זרימת עבודה ביום האירוע</h3>
+                        <p>ניהול האירוע בזמן אמת עם כל הכלים</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Modules Timeline -->
+    <section class="modules-timeline" id="curriculum">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">מסלול הלימוד המלא</h2>
+                <p class="section-subtitle">12 מודולים מעשיים שיובילו אתכם מאפס לעסק מצליח</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-module" data-module="1">
+                    <div class="module-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">🎯</div>
+                        <div class="module-content">
+                            <div class="module-meta">
+                                <span class="module-num">מודול 1</span>
+                                <span class="module-duration">45 דקות</span>
+                            </div>
+                            <h3>מבוא לעולם האירועים</h3>
+                            <p>הכרת השוק, הזדמנויות עסקיות, ומה צריך כדי להצליח בתחום</p>
+                            <div class="module-topics">
+                                <span class="topic-tag">הבנת השוק</span>
+                                <span class="topic-tag">הזדמנויות</span>
+                                <span class="topic-tag">דרישות</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-module" data-module="2">
+                    <div class="module-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">🎨</div>
+                        <div class="module-content">
+                            <div class="module-meta">
+                                <span class="module-num">מודול 2</span>
+                                <span class="module-duration">60 דקות</span>
+                            </div>
+                            <h3>בניית זהות מותגית</h3>
+                            <p>יצירת מותג ייחודי, עיצוב לוגו, ובחירת צבעים ופונטים</p>
+                            <div class="module-topics">
+                                <span class="topic-tag">מיתוג</span>
+                                <span class="topic-tag">עיצוב</span>
+                                <span class="topic-tag">ייחודיות</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-module" data-module="3">
+                    <div class="module-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">📱</div>
+                        <div class="module-content">
+                            <div class="module-meta">
+                                <span class="module-num">מודול 3</span>
+                                <span class="module-duration">50 דקות</span>
+                            </div>
+                            <h3>יצירת נוכחות דיגיטלית</h3>
+                            <p>בניית דפי נחיתה, פרופילים ברשתות חברתיות, ותוכן מושך</p>
+                            <div class="module-topics">
+                                <span class="topic-tag">אתר</span>
+                                <span class="topic-tag">רשתות חברתיות</span>
+                                <span class="topic-tag">תוכן</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-module" data-module="4">
+                    <div class="module-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">📈</div>
+                        <div class="module-content">
+                            <div class="module-meta">
+                                <span class="module-num">מודול 4</span>
+                                <span class="module-duration">55 דקות</span>
+                            </div>
+                            <h3>שיווק אורגני</h3>
+                            <p>טכניקות להשגת לקוחות ללא השקעה כספית גדולה</p>
+                            <div class="module-topics">
+                                <span class="topic-tag">שיווק</span>
+                                <span class="topic-tag">אורגני</span>
+                                <span class="topic-tag">לידים</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-module" data-module="5">
+                    <div class="module-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">🌐</div>
+                        <div class="module-content">
+                            <div class="module-meta">
+                                <span class="module-num">מודול 5</span>
+                                <span class="module-duration">40 דקות</span>
+                            </div>
+                            <h3>עבודה עם פלטפורמות חתונות</h3>
+                            <p>ניצול פלטפורמות מובילות להגדלת החשיפה והמכירות</p>
+                            <div class="module-topics">
+                                <span class="topic-tag">פלטפורמות</span>
+                                <span class="topic-tag">חשיפה</span>
+                                <span class="topic-tag">המלצות</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-module" data-module="6">
+                    <div class="module-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">💰</div>
+                        <div class="module-content">
+                            <div class="module-meta">
+                                <span class="module-num">מודול 6</span>
+                                <span class="module-duration">65 דקות</span>
+                            </div>
+                            <h3>תמחור ואסטרטגיית מכירות</h3>
+                            <p>כיצד לתמחר את השירותים, לסגור עסקאות ולהגדיל רווחים</p>
+                            <div class="module-topics">
+                                <span class="topic-tag">תמחור</span>
+                                <span class="topic-tag">מכירות</span>
+                                <span class="topic-tag">משא ומתן</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-module" data-module="7">
+                    <div class="module-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">👥</div>
+                        <div class="module-content">
+                            <div class="module-meta">
+                                <span class="module-num">מודול 7</span>
+                                <span class="module-duration">50 דקות</span>
+                            </div>
+                            <h3>ניהול צוות</h3>
+                            <p>גיוס, הכשרה וניהול עובדים ומתמחים לאירועים</p>
+                            <div class="module-topics">
+                                <span class="topic-tag">גיוס</span>
+                                <span class="topic-tag">הכשרה</span>
+                                <span class="topic-tag">ניהול</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-module highlight" data-module="8">
+                    <div class="module-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">⭐</div>
+                        <div class="module-content">
+                            <div class="module-badge">הכי חשוב</div>
+                            <div class="module-meta">
+                                <span class="module-num">מודול 8</span>
+                                <span class="module-duration">120 דקות</span>
+                            </div>
+                            <h3>הדרכה מלאה על המערכת "מתחתנים בקלות"</h3>
+                            <p>שליטה מלאה במערכת המקצועית ביותר בשוק - כל התכונות, הטריקים והסודות</p>
+                            <div class="module-topics">
+                                <span class="topic-tag">רשימות</span>
+                                <span class="topic-tag">הודעות</span>
+                                <span class="topic-tag">דוחות</span>
+                                <span class="topic-tag">הושבה</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-module" data-module="9">
+                    <div class="module-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">🪑</div>
+                        <div class="module-content">
+                            <div class="module-meta">
+                                <span class="module-num">מודול 9</span>
+                                <span class="module-duration">70 דקות</span>
+                            </div>
+                            <h3>תכנון הושבה מקצועי</h3>
+                            <p>יצירת מפות הושבה מושלמות, פתרון קונפליקטים משפחתיים</p>
+                            <div class="module-topics">
+                                <span class="topic-tag">מפת הושבה</span>
+                                <span class="topic-tag">שולחנות</span>
+                                <span class="topic-tag">אופטימיזציה</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-module" data-module="10">
+                    <div class="module-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">⏰</div>
+                        <div class="module-content">
+                            <div class="module-meta">
+                                <span class="module-num">מודול 10</span>
+                                <span class="module-duration">60 דקות</span>
+                            </div>
+                            <h3>ניהול אירועים בזמן אמת</h3>
+                            <p>טיפים וטכניקות לניהול מוצלח של האירוע עצמו</p>
+                            <div class="module-topics">
+                                <span class="topic-tag">יום האירוע</span>
+                                <span class="topic-tag">ניהול זמן</span>
+                                <span class="topic-tag">פתרון בעיות</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-module" data-module="11">
+                    <div class="module-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">💬</div>
+                        <div class="module-content">
+                            <div class="module-meta">
+                                <span class="module-num">מודול 11</span>
+                                <span class="module-duration">45 דקות</span>
+                            </div>
+                            <h3>תקשורת עם לקוחות</h3>
+                            <p>בניית מערכת יחסים חזקה, טיפול בהתנגדויות ושמירה על לקוחות</p>
+                            <div class="module-topics">
+                                <span class="topic-tag">תקשורת</span>
+                                <span class="topic-tag">שירות</span>
+                                <span class="topic-tag">שימור</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-module" data-module="12">
+                    <div class="module-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">🚀</div>
+                        <div class="module-content">
+                            <div class="module-meta">
+                                <span class="module-num">מודול 12</span>
+                                <span class="module-duration">40 דקות</span>
+                            </div>
+                            <h3>התחלה מיידית</h3>
+                            <p>צעדים ראשונים מעשיים ליציאה לדרך והשקת העסק</p>
+                            <div class="module-topics">
+                                <span class="topic-tag">השקה</span>
+                                <span class="topic-tag">צעדים ראשונים</span>
+                                <span class="topic-tag">הצלחה</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-cta">
+                <button class="cta-btn primary" onclick="scrollToEnroll()">התחל את הקורס עכשיו</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Section -->
+    <section class="value-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">בסוף הקורס תדעו בדיוק איך...</h2>
+                <p class="section-subtitle">המיומנויות והידע שתרכשו</p>
+            </div>
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon">✅</div>
+                    <h3>לנהל אישורי הגעה ללא טעויות</h3>
+                    <p>תהליך מושלם מהתחלה ועד סוף עם המערכת המקצועית</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3>לתכנן הושבה ללא לחץ</h3>
+                    <p>יצירת מפות הושבה מדויקות ומותאמות לכל סוג אירוע</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">👔</div>
+                    <h3>לעבוד באופן מקצועי עם זוגות</h3>
+                    <p>תקשורת ברמה גבוהה, אמון ושירות יוצא מן הכלל</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💼</div>
+                    <h3>לבנות שירות שאנשים רוצים לשלם עליו</h3>
+                    <p>הבנה מעמיקה של מה יוצר ערך אמיתי ללקוח</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💰</div>
+                    <h3>לקבוע מחירים ולסגור עסקאות</h3>
+                    <p>אסטרטגיות תמחור ומכירה שעובדות</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">⚡</div>
+                    <h3>לנהל אירועים מהתחלה עד הסוף בביטחון</h3>
+                    <p>שליטה מלאה בכל שלב, מהפגישה הראשונה ועד סיום האירוע</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">📈</div>
+                    <h3>לבנות עסק רווחי לטווח ארוך</h3>
+                    <p>לא רק פרויקט - עסק אמיתי עם הכנסה קבועה</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🏆</div>
+                    <h3>להתבלט מהמתחרים</h3>
+                    <p>מומחיות, כלים וגישה שייחדו אתכם בשוק</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">מה אומרים הבוגרים</h2>
+                <p class="section-subtitle">סיפורי הצלחה אמיתיים ממי שעשו את הקורס</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"הקורס הזה ממש שינה לי את החיים! הייתי בתחילת הדרך בלי ניסיון, והיום אני מנהלת עסק עצמאי מצליח מהבית. הליווי היה מקצועי ומפורט, והמערכת 'מתחתנים בקלות' פשוט מדהימה. כבר ניהלתי 15 אירועים ולקוחות מרוצים ממליצים עלי."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="./assets/testimonial-1.jpg" alt="דנה כהן" onerror="this.style.display='none'">
+                                    <span class="avatar-fallback">ד</span>
+                                </div>
+                                <div class="author-info">
+                                    <strong>דנה כהן</strong>
+                                    <span>בוגרת הקורס | רמת גן</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"התוכן מעשי להפליא! כל שיעור נתן לי כלים שיכולתי ליישם מיד. המודול על המערכת היה מקיף ומפורט - למדתי כל טריק ופונקציה. היום אני עובד עם 3-4 זוגות במקביל והכנסה יציבה. ממליץ בחום לכל מי שרוצה עסק אמיתי."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="./assets/testimonial-2.jpg" alt="יוסי לוי" onerror="this.style.display='none'">
+                                    <span class="avatar-fallback">י</span>
+                                </div>
+                                <div class="author-info">
+                                    <strong>יוסי לוי</strong>
+                                    <span>בוגר הקורס | תל אביב</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"בהתחלה היססתי - לא הייתי בטוחה שאני מסוגלת. אבל הקורס בנוי כל כך טוב ומסודר שהכל הרגיש פשוט. השירות ללקוחות, התמחור, העבודה עם המערכת - הכל מוסבר בפירוט. תוך 3 חודשים סגרתי את הלקוח הראשון, ומאז זה רק הולך ועולה!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="./assets/testimonial-3.jpg" alt="מיכל אברהם" onerror="this.style.display='none'">
+                                    <span class="avatar-fallback">מ</span>
+                                </div>
+                                <div class="author-info">
+                                    <strong>מיכל אברהם</strong>
+                                    <span>בוגרת הקורס | ירושלים</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button class="slider-btn prev" onclick="moveTestimonial(-1)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="slider-dots">
+                        <span class="dot active" onclick="goToTestimonial(0)"></span>
+                        <span class="dot" onclick="goToTestimonial(1)"></span>
+                        <span class="dot" onclick="goToTestimonial(2)"></span>
+                    </div>
+                    <button class="slider-btn next" onclick="moveTestimonial(1)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="pricing-bg"></div>
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">התחילו את העסק שלכם היום</h2>
+                <p class="section-subtitle">השקעה אחת שתשנה את הקריירה שלכם</p>
+            </div>
+            <div class="pricing-card-wrapper">
+                <div class="pricing-card premium">
+                    <div class="pricing-badge">🔥 מבצע מוגבל</div>
+                    <div class="pricing-header">
+                        <h3>גישה מלאה לקורס</h3>
+                        <div class="pricing-price">
+                            <span class="currency">₪</span>
+                            <span class="amount">1,997</span>
+                            <span class="old-price">₪2,997</span>
+                        </div>
+                        <p class="pricing-subtitle">תשלום חד-פעמי | גישה לכל החיים</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M6 10l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span>12 מודולים מקיפים (10+ שעות)</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M6 10l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span>הדרכה מלאה על "מתחתנים בקלות"</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M6 10l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span>עדכונים והרחבות לכל החיים</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M6 10l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span>תבניות להורדה (SMS, WhatsApp, מיילים)</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M6 10l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span>זרימות עבודה אמיתיות מלקוחות</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M6 10l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span>סקריפטים למכירה וטיפול בהתנגדויות</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M6 10l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span>מדריכי עזר להדפסה (PDF)</span>
+                        </div>
+                        <div class="feature-item highlight">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M6 10l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span><strong>בונוס:</strong> קבוצת תמיכה פרטית</span>
+                        </div>
+                        <div class="feature-item highlight">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M6 10l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span><strong>בונוס:</strong> שיחת ייעוץ 1:1</span>
+                        </div>
+                    </div>
+                    <button class="cta-btn primary large full-width" onclick="handleEnroll()">
+                        <span>הרשמה לקורס והתחלה מיידית</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M13 10L7 16M13 10L7 4M13 10H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="pricing-guarantee">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M18 24l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <div>
+                            <strong>ערבות החזר כספי ל-30 יום</strong>
+                            <p>לא מרוצה? תקבל החזר מלא, ללא שאלות</p>
+                        </div>
+                    </div>
+                    <div class="pricing-trust">
+                        <div class="trust-item">
+                            <span class="trust-icon">🔒</span>
+                            <span>תשלום מאובטח</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">⚡</span>
+                            <span>גישה מיידית</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">♾️</span>
+                            <span>גישה לכל החיים</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">שאלות נפוצות</h2>
+                <p class="section-subtitle">כל מה שרציתם לדעת על הקורס</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>האם צריך ניסיון קודם בתחום?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>בכלל לא! הקורס בנוי במיוחד למתחילים. אנחנו מתחילים מהבסיס המוחלט ומלמדים הכל צעד אחר צעד. גם אם אתם בכלל לא מכירים את התחום - תצאו מהקורס עם כל הידע והכלים הנדרשים.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>האם המערכת "מתחתנים בקלות" כלולה במחיר הקורס?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>הקורס כולל הדרכה מקיפה על המערכת, אבל השימוש במערכת עצמה דורש מנוי נפרד. בסוף הקורס תקבלו הנחה מיוחדת של בוגרי הקורס על המנוי. אפשר גם להתחיל בגרסת הניסיון החינמית של המערכת.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>כמה זמן לוקח להשלים את הקורס?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>הקורס כולל כ-10 שעות תוכן, אבל זה תלוי בקצב שלכם. חלק מהתלמידים מסיימים תוך שבועיים, ואחרים לוקחים חודש-חודשיים. יש לכם גישה לכל החיים, אז אפשר ללמוד בקצב שמתאים לכם.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>האם יש תמיכה אחרי הרכישה?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>בהחלט! תקבלו גישה לקבוצת תמיכה פרטית של בוגרי הקורס, ובנוסף שיחת ייעוץ אישית 1:1 כדי לעזור לכם להתחיל. אנחנו כאן כדי לוודא שאתם מצליחים.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>כמה כסף אפשר להרוויח מהעסק הזה?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>זה תלוי בכמה זמן אתם משקיעים ובאיזו רמה אתם עובדים. בוגרים שלנו מרוויחים בין 2,000-8,000 ₪ לאירוע, תלוי בגודל האירוע ובשירותים שהם מציעים. מי שעובד על 3-5 אירועים בחודש יכול להגיע להכנסה של 15,000-30,000 ₪ לחודש.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>מה קורה אם אני לא מרוצה מהקורס?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>יש לכם ערבות החזר כספי ל-30 יום. אם הקורס לא מתאים לכם מכל סיבה שהיא, פשוט תשלחו לנו הודעה ותקבלו החזר מלא, ללא שאלות. אנחנו רוצים שתהיו מרוצים לחלוטין.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>האם הקורס מתאים גם לגברים?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>בהחלט! יש לנו בוגרים וגברים ונשים שמצליחים מאוד בתחום. העבודה דורשת ארגון, תקשורת טובה ושליטה בכלים טכנולוגיים - לא משנה מה המגדר שלכם.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>האם אפשר לעשות את זה במקביל לעבודה?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>כן! רוב הבוגרים שלנו התחילו כך. העבודה גמישה - אפשר לנהל את האישורים בערבים ובסופי שבוע, והאירועים עצמם בדרך כלל מתקיימים בימי חמישי-שבת. זה אידיאלי להכנסה נוספת או למעבר הדרגתי לעצמאות.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="cta-particles"></div>
+        <div class="container">
+            <div class="final-cta-content">
+                <h2>הקריירה החדשה שלכם מתחילה כאן</h2>
+                <p>למדו את המערכת. שלטו בתהליך. בנו עסק רווחי ומקצועי.</p>
+                <div class="final-cta-features">
+                    <div class="final-feature">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 16l5 5 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>גישה מיידית</span>
+                    </div>
+                    <div class="final-feature">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 16l5 5 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>ערבות 30 יום</span>
+                    </div>
+                    <div class="final-feature">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 16l5 5 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>תמיכה מלאה</span>
+                    </div>
+                </div>
+                <button class="cta-btn primary mega" onclick="handleEnroll()">
+                    <span>התחילו עכשיו</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 12L9 18M15 12L9 6M15 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <p class="final-disclaimer">אל תחכו - המחיר המבצע יעלה בקרוב</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-simple">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./assets/logo.png" alt="Checklists Logo">
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">מדיניות פרטיות</a>
+                    <a href="#terms">תנאי שימוש</a>
+                    <a href="mailto:info@checklists-group.co.il">צור קשר</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/checklistsweddingRSVPs" target="_blank" rel="noopener">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/checklists_events/" target="_blank" rel="noopener">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer-copy">© 2024 Checklists. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="videoModal">
+        <div class="modal-overlay" onclick="closeModal('videoModal')"></div>
+        <div class="modal-content video-modal-content">
+            <button class="modal-close" onclick="closeModal('videoModal')">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </button>
+            <div class="video-wrapper">
+                <iframe id="courseVideo" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="systemModal">
+        <div class="modal-overlay" onclick="closeModal('systemModal')"></div>
+        <div class="modal-content system-modal-content">
+            <button class="modal-close" onclick="closeModal('systemModal')">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </button>
+            <div class="system-modal-body">
+                <img id="systemScreenshot" src="" alt="System Screenshot">
+                <div class="system-modal-info">
+                    <h3 id="systemStepTitle"></h3>
+                    <p id="systemStepDesc"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="course-page.js"></script>
+</body>
+</html>
